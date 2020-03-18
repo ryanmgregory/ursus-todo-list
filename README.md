@@ -42,3 +42,4 @@ The `index.html` and **jQuery** files have already been created and the **jQuery
 1. There is a stylesheet, `style.css`, that has some styles in it for you
 1. With the styling that's in place you should just be able to add the appropriate classes to the correct elements and everything should be styled
 1. Try to determine where each of the classes should go
+1. You may need to alter the HTML you are using for all of the styles to work
