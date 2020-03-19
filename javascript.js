@@ -8,6 +8,13 @@ function init() {
 // addTask function to receive task (as object) into array
 // create object with name (string) & complete (boolean)
 
-function addTask{
-    console.log('in addTask');
+function addTask() {
+  console.log("in addTask");
+
+  // let complete = false;
+
+  const taskObject = {
+    taskName: $(".js-input-task").val(),
+    complete: Boolean(false)
+  };
 }
