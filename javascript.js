@@ -27,3 +27,5 @@ function addTask(event) {
 function emptyField() {
   $(".js-input-task").val("");
 }
+
+// Display object from array on <ul> on DOM
