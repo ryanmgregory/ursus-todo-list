@@ -30,12 +30,15 @@ function emptyField() {
 }
 
 // Display object from array on <ul> on DOM
+// empty array before each push
 function render() {
+  $(".js-unordered-list").empty();
   for (let i = 0; i < todoArray.length; i++) {
     const individualTask = todoArray[i];
     $(".js-unordered-list").append(`
-        <li>${individualTask.taskName}  </li>
-        
+        <div>
+        <li>${individualTask.taskName}  <button class="js-btn-complete"></button>  </li>
+        <div>
         
         
         `);
