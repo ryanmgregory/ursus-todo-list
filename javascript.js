@@ -16,7 +16,8 @@ function addTask(event) {
 
   const taskObject = {
     taskName: $(".js-input-task").val(),
-    complete: Boolean(false)
+    complete: false
+    // complete: Boolean(false)
   };
   todoArray.push(taskObject);
   console.log("to do array:", todoArray);
@@ -37,10 +38,18 @@ function render() {
     const individualTask = todoArray[i];
     $(".js-unordered-list").append(`
         <div>
-        <li>${individualTask.taskName}  <button class="js-btn-complete"> Complete </button>  </li>
+        <li>${
+          individualTask.taskName
+        }<button${(individualTask.complete = true)}> Complete </button>  </li>
         <div>
         
         
         `);
   }
 }
+
+// function testing area for btn to change object value to true
+
+// function changeBoolean() {}
+// taskObject.complete = true;
+// ${individualTask.complete}
