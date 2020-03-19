@@ -20,4 +20,10 @@ function addTask(event) {
   };
   todoArray.push(taskObject);
   console.log("to do array:", todoArray);
+  emptyField();
+}
+
+// empty input field after addTask
+function emptyField() {
+  $(".js-input-task").val("");
 }
