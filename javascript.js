@@ -21,6 +21,7 @@ function addTask(event) {
   todoArray.push(taskObject);
   console.log("to do array:", todoArray);
   emptyField();
+  render();
 }
 
 // empty input field after addTask
@@ -29,3 +30,14 @@ function emptyField() {
 }
 
 // Display object from array on <ul> on DOM
+function render() {
+  for (let i = 0; i < todoArray.length; i++) {
+    const individualTask = todoArray[i];
+    $(".js-unordered-list").append(`
+        <li>${individualTask.taskName}  </li>
+        
+        
+        
+        `);
+  }
+}
