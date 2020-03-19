@@ -37,7 +37,7 @@ function render() {
     const individualTask = todoArray[i];
     $(".js-unordered-list").append(`
         <div>
-        <li>${individualTask.taskName}  <button class="js-btn-complete"></button>  </li>
+        <li>${individualTask.taskName}  <button class="js-btn-complete"> Complete </button>  </li>
         <div>
         
         
