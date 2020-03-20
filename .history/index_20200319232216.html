@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="javascript.js" type="text/javascript"></script>
+
+    <title>Todo List</title>
+  </head>
+  <body>
+    <header class="appBar">
+      <h1 class="appBar-title">Todo List App</h1>
+    </header>
+    <!-- ASSIGNMENT CONTENT GOES BELOW HERE -->
+
+    <!--Input field with "New Task" label.  "Add Task" BTN.  -->
+    <div class="panel">
+      <form class="js-form-add">
+        <label class="fieldLabel">New Task:</label>
+        <input
+          class="js-input-task inputField"
+          type="text"
+          placeholder="Enter New Task"
+        />
+        <button class="btn btn_fullWidth" type="submit">ADD TASK</button>
+      </form>
+    </div>
+
+    <!-- h3 "My To Do List"  -->
+    <h3>My Todo List</h3>
+    <!-- <UL> <OL single item: "There are no tasks in it"/>  -->
+    <div class="panel">
+      <ul class="js-unordered-list stackedList">
+        <li class="js-single-item-list stackedList">
+          There are no tasks
+        </li>
+      </ul>
+    </div>
+    <footer class="footer">
+      &copy; Prime Digital Academy
+    </footer>
+  </body>
+</html>
