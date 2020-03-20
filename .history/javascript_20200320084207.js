@@ -51,7 +51,6 @@ function render() {
 function toggleBtn() {
   console.log("in toggleBtn");
   const listIndex = $(this).data("index");
-  console.log("ARRAY:", todoArray);
   console.log("??????", listIndex);
 }
 
