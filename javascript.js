@@ -39,12 +39,13 @@ function render() {
     const individualTask = todoArray[i];
     $(".js-unordered-list").append(`
         <div>
-        <li>${individualTask.taskName}    <button class="js-btn-complete">COMPLETE</button>  </li>
+        <li>${individualTask.taskName} <button class="js-btn-complete">COMPLETE</button>  </li>
         <div>
         `);
   }
 }
 
 function toggleBtn() {
-  console.log("in TOGLLE!!!");
+  console.log("in ToGgLe!!!");
+  //   $(this).
 }
