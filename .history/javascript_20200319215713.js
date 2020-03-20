@@ -3,7 +3,7 @@ $(document).ready(init);
 const todoArray = [];
 
 function init() {
-  $(".js-form-add").on("click", ".btn", addTask);
+  $(".js-form-add").on("click", ".js-btn-add", addTask);
   $(".js-unordered-list").on("click", ".js-btn-complete", toggleBtn);
 }
 

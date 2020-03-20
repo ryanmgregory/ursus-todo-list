@@ -3,7 +3,7 @@ $(document).ready(init);
 const todoArray = [];
 
 function init() {
-  $(".js-form-add").on("click", ".btn", addTask);
+  $(".js-form-add").on("click", ".js-btn-add", addTask);
   $(".js-unordered-list").on("click", ".js-btn-complete", toggleBtn);
 }
 
@@ -51,7 +51,9 @@ function render() {
 // btn click event to change value of object to true
 
 function toggleBtn() {
-  $(this.value === false);
+  console.log("in toggle");
+  $(this).complete === false;
+  console.log("yeyeyye");
 }
 
 //   console.log("in ToGgLe!!!");

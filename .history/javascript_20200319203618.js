@@ -3,7 +3,7 @@ $(document).ready(init);
 const todoArray = [];
 
 function init() {
-  $(".js-form-add").on("click", ".btn", addTask);
+  $(".js-form-add").on("click", ".js-btn-add", addTask);
   $(".js-unordered-list").on("click", ".js-btn-complete", toggleBtn);
 }
 
@@ -22,6 +22,7 @@ function addTask(event) {
   const taskObject = {
     taskName: $(".js-input-task").val(),
     complete: false
+    // complete: Boolean(false)
   };
   todoArray.push(taskObject);
   console.log("to do array:", todoArray);
@@ -48,37 +49,16 @@ function render() {
   }
 }
 
-// btn click event to change value of object to true
-
+// btn click event to change value of object to false
 function toggleBtn() {
-  $(this.value === false);
+  console.log("in ToGgLe!!!");
+  console.log("todoArray:", todoArray);
+  for (let i = 0; i < todoArray.length; i++) {
+    const individualTask = todoArray[i];
+    $(".js-unordered-list").append(`
+  <div>
+  <button class="js-btn-complete"${(individualTask.complete = true)}>COMPLETE</button>  </li>
+  <div>
+  `);
+  }
 }
-
-//   console.log("in ToGgLe!!!");
-//   if (($(this.parent()) = false)) {
-//     console.log("its false");
-//   }
-//   if (($(this.parent()) = true)) {
-//     console.log("its true");
-//   }
-// }
-
-//   for (let i = 0; i < todoArray.length; i++) {
-//     const individualTask = todoArray[i];
-//     $(this).toggle($({.complete} = true));
-//   }
-
-// // console.log("todoArray:", todoArray);
-
-// function toggleBtn() {
-//   console.log("in ToGgLe!!!");
-//   console.log("todoArray:", todoArray);
-//   for (let i = 0; i < todoArray.length; i++) {
-//     const individualTask = todoArray[i];
-//     $(".js-unordered-list").append(`
-//   <div>
-//   <button class="js-btn-complete"${(individualTask.complete = true)}>COMPLETE</button>  </li>
-//   <div>
-//   `);
-//   }
-// }
