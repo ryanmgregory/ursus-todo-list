@@ -45,14 +45,13 @@ function render() {
 }
 
 // toggle object property of complete (true/false)
-function toggleBtn(event) {
+function toggleBtn() {
   const dataObject = $(this).data();
-  console.log("index", dataObject);
-  {
-    if (todoArray[dataObject.index].complete === true)
-      todoArray.splice(dataObject, 1);
-  }
+  console.log("index", dataObject);{
+  if (todoArray[dataObject.index].complete === false) {
+    todoArray.splice(1,1, false);
 }
+  }
 
 // $(this).data(${taskObject.complete === true});
 // const listIndex = $(this).${(taskObject.complete = true)};

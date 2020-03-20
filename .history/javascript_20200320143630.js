@@ -45,7 +45,11 @@ function render() {
 }
 
 // toggle object property of complete (true/false)
-function toggleBtn(event) {
+function toggleBtn() {
+  const taskObject = {
+    taskName: $(".js-input-task").val(),
+    complete: false
+  };
   const dataObject = $(this).data();
   console.log("index", dataObject);
   {

@@ -45,12 +45,12 @@ function render() {
 }
 
 // toggle object property of complete (true/false)
-function toggleBtn(event) {
+function toggleBtn() {
   const dataObject = $(this).data();
   console.log("index", dataObject);
-  {
-    if (todoArray[dataObject.index].complete === true)
-      todoArray.splice(dataObject, 1);
+  if (todoArray[dataObject.index].complete === false) {
+    todoArray[dataObject.index].complete === not;
+    $;
   }
 }
 

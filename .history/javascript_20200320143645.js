@@ -45,7 +45,7 @@ function render() {
 }
 
 // toggle object property of complete (true/false)
-function toggleBtn(event) {
+function toggleBtn() {
   const dataObject = $(this).data();
   console.log("index", dataObject);
   {
