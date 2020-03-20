@@ -49,15 +49,14 @@ function render() {
   }
 }
 
-// btn click event to change value of object to false
+
+
 function toggleBtn() {
   console.log("in ToGgLe!!!");
-  for (let i = 0; i < todoArray.length; i++) {
-    const individualTask = todoArray[i];
-    $(".js-unordered-list").append(`
+  $(".js-unordered-list").append(`
   <div>
-  <button class="js-btn-complete"${(individualTask.complete = true)}>COMPLETE</button>  </li>
+  <button class=${}"js-btn-complete">COMPLETE</button>  </li>
   <div>
   `);
-  }
+
 }

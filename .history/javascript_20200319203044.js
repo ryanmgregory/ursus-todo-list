@@ -4,7 +4,7 @@ const todoArray = [];
 
 function init() {
   $(".js-form-add").on("click", ".js-btn-add", addTask);
-  $(".js-unordered-list").on("click", ".js-btn-complete", toggleBtn);
+  // $(".js-unordered-list").on("click", ".js-btn-complete", toggleBtn);
 }
 
 const taskObject = {
@@ -43,21 +43,18 @@ function render() {
     const individualTask = todoArray[i];
     $(".js-unordered-list").append(`
         <div>
-        <li>${individualTask.taskName} <button class="js-btn-complete">COMPLETE</button>  </li>
+        <li>${individualTask.taskName}${individualTask.complete} <button class="js-btn-complete">COMPLETE</button>  </li>
         <div>
         `);
   }
 }
 
-// btn click event to change value of object to false
-function toggleBtn() {
-  console.log("in ToGgLe!!!");
-  for (let i = 0; i < todoArray.length; i++) {
-    const individualTask = todoArray[i];
-    $(".js-unordered-list").append(`
-  <div>
-  <button class="js-btn-complete"${(individualTask.complete = true)}>COMPLETE</button>  </li>
-  <div>
-  `);
-  }
-}
+// function toggleBtn() {
+//   console.log("in ToGgLe!!!");
+//   $(".js-unordered-list").append(`
+//   <div>
+//   <button class="js-btn-complete"${}>COMPLETE</button>  </li>
+//   <div>
+//   `);
+
+// }
