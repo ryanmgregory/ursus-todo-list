@@ -42,7 +42,7 @@ function render() {
     const individualTask = todoArray[i];
     $(".js-unordered-list").append(`
         <div>
-        <li>${individualTask.taskName}<button class="btn js-btn-complete">COMPLETE</button>  </li>
+        <li>${individualTask.taskName}       <button class="btn js-btn-complete">COMPLETE</button>  </li>
         <div>
         `);
   }
@@ -50,9 +50,9 @@ function render() {
 
 // btn click event to change value of object to true
 
-// function toggleBtn() {
-//   $(this.value === false);
-// }
+function toggleBtn() {
+  $(this.value === false);
+}
 
 //   console.log("in ToGgLe!!!");
 //   if (($(this.parent()) = false)) {
